@@ -18,3 +18,14 @@ urllib3==2.0.4
 Flask==2.2.2
 gunicorn==20.1.0
 aiohttp==3.8.1
+﻿certifi==2023.5.7
+charset-normalizer==3.2.0
+daemonize==2.5.0
+idna==3.4
+pyaes==1.6.1
+pyasn1==0.5.0
+pytz==2023.3
+requests==2.31.0
+rsa==4.9
+Telethon==1.28.5
+urllib3==2.0.3
