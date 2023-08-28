@@ -59,9 +59,15 @@ else:
                 a = change(y)
             except KeyError:
                 print(url, "page not available")
-
+                
 msg = o+a
-   
-   
-  #tag change and send 
-send_mes(msg)
+for i in range(10) :
+    print(i)
+    file2=open("oldlink.txt")
+    if msg not in file2:
+        file1=open("oldlink.txt","r+")
+        send_mes(msg)
+    file1 = open("oldlink.txt","w")
+    file1.writelines(msg)
+    file1.close()
+    
