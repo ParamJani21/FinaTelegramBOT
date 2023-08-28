@@ -27,5 +27,3 @@ pyasn1==0.5.0
 pytz==2023.3
 requests==2.31.0
 rsa==4.9
-Telethon==1.28.5
-urllib3==2.0.3
