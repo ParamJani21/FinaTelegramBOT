@@ -5,5 +5,5 @@ app=Flask(__name__)
 def hello_world():
     return 'GreyMatters'
 
-if __name__=="main":
+if __name__=="__main__":
     app.run()
