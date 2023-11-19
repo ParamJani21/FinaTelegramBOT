@@ -2,7 +2,6 @@ import requests
 from datetime import datetime
 import re
 import pytz
-app()
 IST = pytz.timezone('Asia/Kolkata')
 raw_TS = datetime.now(IST)
 curr_date = raw_TS.strftime("%d-%m-%Y")
