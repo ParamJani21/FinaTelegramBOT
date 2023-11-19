@@ -1,4 +1,3 @@
-from telethon import TelegramClient, events
 import requests
 from datetime import datetime
 import re
