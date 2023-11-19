@@ -30,20 +30,20 @@ def send_mes(message):
     a = "null"
     print("message sent")
 i=1
-
-base_url = "https://api.telegram.org/bot6643627856:AAH3sk7ZTFrRFeYIA-Of0GH1h8FTE-yq0JM"
-parameter = {
+for i in range(10):
+ base_url = "https://api.telegram.org/bot6643627856:AAH3sk7ZTFrRFeYIA-Of0GH1h8FTE-yq0JM"
+ parameter = {
         "offset": "482396017"
  }
-resp = requests.get(base_url + "/getUpdates", data=parameter)
-data = resp.json()
-for result in data["result"]:
-    if "message" in result and "text" in result["message"]:
+ resp = requests.get(base_url + "/getUpdates", data=parameter)
+ data = resp.json()
+ for result in data["result"]:
+     if "message" in result and "text" in result["message"]:
             x = result["message"]["text"]
             url = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[^\(\), ][ (?:%[0-9a-fA-F][0-9a-fA-F])+', x)
-if not url:
+ if not url:
         None
-else:
+ else:
         c = " ".join(url)
         s = x.find("https://")
         o = x[0:s]
@@ -58,8 +58,8 @@ else:
             except KeyError:
                 print(url, "page not available")
                 
-msg = o+a
-for i in range(10) :
+ msg = o+a
+ for i in range(10) :
     print(i)
     file2=open("oldlink.txt")
     if msg not in file2:
@@ -68,4 +68,4 @@ for i in range(10) :
     file1 = open("oldlink.txt","w")
     file1.writelines(msg)
     file1.close()
-    
+ print(i)
