@@ -18,20 +18,20 @@ def change(url):
     return f
 
 def send_mes(message):
-    chatid="@abcd9925"
+    chatid="@abcd123454321123"
     message_1 = messageParse(message)
     params = {
         "chat_id": chatid,
         "text": message_1,
         "parse_mode": "HTML",
     }
-    telegram_api = f"https://api.telegram.org/bot6489447040:AAE0DuiALHjvNvXjbb2Hb6rJt66udNj5yjI/sendMessage"
+    telegram_api = f"https://api.telegram.org/bot6643627856:AAH3sk7ZTFrRFeYIA-Of0GH1h8FTE-yq0JM/sendMessage"
     tel_resp = requests.get(telegram_api,params=params)
     a = "null"
     print("message sent")
 i=1
 
-base_url = "https://api.telegram.org/bot6489447040:AAE0DuiALHjvNvXjbb2Hb6rJt66udNj5yjI"
+base_url = "https://api.telegram.org/bot6643627856:AAH3sk7ZTFrRFeYIA-Of0GH1h8FTE-yq0JM"
 parameter = {
         "offset": "482396017"
  }
