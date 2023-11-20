@@ -63,7 +63,7 @@ for i in range(10):
  if msg not in file2:
         file1=open("oldlink1.txt","r+")
         send_mes(msg)
- file1 = open("oldlink1.txt","w")
- file1.writelines(msg)
- file1.close()
+        file1 = open("oldlink1.txt","w")
+        file1.writelines(msg)
+        file1.close()
  print(i)
