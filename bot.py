@@ -59,11 +59,11 @@ for i in range(10):
                 print(url, "page not available")
                 
  msg = o+a
- file2=open("oldlink1.txt")
+ file2=open("oldlink.txt")
  if msg not in file2:
-        file1=open("oldlink1.txt","r+")
+        file1=open("oldlink.txt","r+")
         send_mes(msg)
-        file1 = open("oldlink1.txt","w")
+        file1 = open("oldlink.txt","w")
         file1.writelines(msg)
         file1.close()
  print(i)
