@@ -25,13 +25,13 @@ def send_mes(message):
         "text": message_1,
         "parse_mode": "HTML",
     }
-    telegram_api = f"https://api.telegram.org/bot6643627856:AAH3sk7ZTFrRFeYIA-Of0GH1h8FTE-yq0JM/sendMessage"
+    telegram_api = f"https://api.telegram.org/bot6723570700:AAE7xGOc4fTAwumAJ9BCSZl4AFVhcVEBl9E/sendMessage"
     tel_resp = requests.get(telegram_api,params=params)
     a = "null"
     print("message sent")
 i=1
 for i in range(10):
- base_url = "https://api.telegram.org/bot6643627856:AAH3sk7ZTFrRFeYIA-Of0GH1h8FTE-yq0JM"
+ base_url = "https://api.telegram.org/bot6723570700:AAE7xGOc4fTAwumAJ9BCSZl4AFVhcVEBl9E"
  parameter = {
         "offset": "482396017"
  }
